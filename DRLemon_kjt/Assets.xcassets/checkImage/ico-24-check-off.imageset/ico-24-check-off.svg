@@ -1,0 +1,14 @@
+<svg id="ico-24-check-off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="mask" width="24" height="24" transform="translate(16 279)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="ico-24-check-off-2" data-name="ico-24-check-off" transform="translate(-16 -279)" clip-path="url(#clip-path)">
+    <g id="area" transform="translate(19 282)" fill="#fff" stroke="#9ca8ba" stroke-width="1">
+      <rect width="18" height="18" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="17" height="17" rx="5.5" fill="none"/>
+    </g>
+    <path id="합치기_117" data-name="합치기 117" d="M-896.465-1189.929l-2.828-2.829a1,1,0,0,1,0-1.414,1,1,0,0,1,1.414,0l2.121,2.121,4.243-4.242a1,1,0,0,1,1.414,0,1,1,0,0,1,0,1.414l-4.949,4.95a1,1,0,0,1-.707.293A1,1,0,0,1-896.465-1189.929Z" transform="translate(922.697 1484.111)" fill="#bcc6d4"/>
+  </g>
+</svg>
