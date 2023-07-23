@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Terms View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DRLemon_kjt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TermsViewController" customModule="DRLemon_kjt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,11 +33,11 @@
                                         </constraints>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="checkmark.square" catalog="system"/>
+                                        <state key="normal" image="ico-24-check-on"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체동의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-G0-clt">
-                                        <rect key="frame" x="49" y="88" width="59" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="49" y="88" width="48.666666666666657" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -89,10 +89,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxL-sP-PQm">
                                 <rect key="frame" x="0.0" y="259" width="430" height="639"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-RT-vIE">
-                                        <rect key="frame" x="16" y="24" width="398" height="315"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-RT-vIE">
+                                        <rect key="frame" x="16" y="24" width="398" height="519"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TermsCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TermsCell" rowHeight="44" id="ZX1-La-dgj" customClass="TermsCell" customModule="DRLemon_kjt" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TermsCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TermsCell" id="ZX1-La-dgj" customClass="TermsCell" customModule="DRLemon_kjt" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="398" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZX1-La-dgj" id="07q-DG-IvN">
@@ -103,13 +103,6 @@
                                         </prototypes>
                                         <sections/>
                                     </tableView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-qz-LT4">
-                                        <rect key="frame" x="16" y="363" width="398" height="1"/>
-                                        <color key="backgroundColor" red="0.92144411800000003" green="0.93824905160000005" blue="0.96048766370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="lf1-zx-G32"/>
-                                        </constraints>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Or-aX-p7a">
                                         <rect key="frame" x="16" y="575" width="398" height="48"/>
                                         <constraints>
@@ -121,15 +114,12 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="Bak-qz-LT4" firstAttribute="trailing" secondItem="ua4-RT-vIE" secondAttribute="trailing" id="F0f-pq-J9Y"/>
+                                    <constraint firstItem="3Or-aX-p7a" firstAttribute="top" secondItem="ua4-RT-vIE" secondAttribute="bottom" constant="32" id="GJG-y0-KeU"/>
                                     <constraint firstAttribute="bottom" secondItem="3Or-aX-p7a" secondAttribute="bottom" constant="16" id="JAd-b1-hPJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="ua4-RT-vIE" secondAttribute="bottom" constant="300" id="NUr-Vs-Oh7"/>
                                     <constraint firstAttribute="trailing" secondItem="ua4-RT-vIE" secondAttribute="trailing" constant="16" id="ReZ-ih-sj9"/>
                                     <constraint firstItem="3Or-aX-p7a" firstAttribute="leading" secondItem="ZxL-sP-PQm" secondAttribute="leading" constant="16" id="cMg-b2-H9x"/>
                                     <constraint firstItem="ua4-RT-vIE" firstAttribute="leading" secondItem="ZxL-sP-PQm" secondAttribute="leading" constant="16" id="rUg-ym-oQW"/>
-                                    <constraint firstItem="Bak-qz-LT4" firstAttribute="leading" secondItem="ua4-RT-vIE" secondAttribute="leading" id="rhY-rQ-Cxu"/>
                                     <constraint firstAttribute="trailing" secondItem="3Or-aX-p7a" secondAttribute="trailing" constant="16" id="xnV-zJ-xvF"/>
-                                    <constraint firstItem="3Or-aX-p7a" firstAttribute="top" secondItem="Bak-qz-LT4" secondAttribute="bottom" constant="211" id="ymR-w9-v1h"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -176,8 +166,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="ico-24-check-on" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

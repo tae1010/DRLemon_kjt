@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="OptionalTermsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OptionalTermsCell" rowHeight="269" id="7Vg-AY-T9Y" customClass="OptionalTermsCell" customModule="DRLemon_kjt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="582" height="269"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Vg-AY-T9Y" id="jes-I1-s9j">
+                <rect key="frame" x="0.0" y="0.0" width="582" height="269"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xav-dh-Wcd">
+                        <rect key="frame" x="0.0" y="18" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="7yO-K5-c3c"/>
+                            <constraint firstAttribute="height" constant="24" id="am9-ca-B82"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="ico-24-check-off"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDf-eF-Ct2">
+                        <rect key="frame" x="542" y="18" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="U41-2F-3Nt"/>
+                            <constraint firstAttribute="height" constant="24" id="yXF-25-7ld"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="com-unfold"/>
+                        <connections>
+                            <action selector="tabShowChooseMarketingButton:" destination="7Vg-AY-T9Y" eventType="touchUpInside" id="GhO-rU-l80"/>
+                        </connections>
+                    </button>
+                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eON-Xv-SqH">
+                        <rect key="frame" x="0.0" y="213" width="582" height="56"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="TYE-2s-GCz">
+                                <rect key="frame" x="0.0" y="0.0" width="194" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrE-dj-Uoy">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="56"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="checkmark.square" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g45-OK-Kcz">
+                                        <rect key="frame" x="86" y="0.0" width="108" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3Am-8j-tKw">
+                                <rect key="frame" x="194" y="0.0" width="194" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTI-M7-kc3">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="56"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="checkmark.square" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXy-fN-dvT">
+                                        <rect key="frame" x="86" y="0.0" width="108" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-cm-peb">
+                                <rect key="frame" x="388" y="0.0" width="194" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX5-ad-g4C">
+                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="56"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="checkmark.square" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AS-bI-6UQ">
+                                        <rect key="frame" x="67.333333333333314" y="0.0" width="126.66666666666669" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75766485100000003" green="0.75766485100000003" blue="0.75766485100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="cTK-Zj-Kqe"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약관 타이틀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ia-pH-18s">
+                        <rect key="frame" x="32" y="18" width="502" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uDf-eF-Ct2" secondAttribute="trailing" constant="16" id="2qE-ec-JtM"/>
+                    <constraint firstItem="eON-Xv-SqH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3ia-pH-18s" secondAttribute="bottom" constant="18" id="AZg-hJ-hLM"/>
+                    <constraint firstAttribute="trailing" secondItem="eON-Xv-SqH" secondAttribute="trailing" id="Ava-Uz-J5F"/>
+                    <constraint firstItem="xav-dh-Wcd" firstAttribute="leading" secondItem="jes-I1-s9j" secondAttribute="leading" id="Bii-Po-CcL"/>
+                    <constraint firstItem="eON-Xv-SqH" firstAttribute="leading" secondItem="jes-I1-s9j" secondAttribute="leading" id="Ewn-Y4-3Pl"/>
+                    <constraint firstItem="xav-dh-Wcd" firstAttribute="top" secondItem="jes-I1-s9j" secondAttribute="top" constant="18" id="Nam-Tl-VTA"/>
+                    <constraint firstItem="3ia-pH-18s" firstAttribute="top" secondItem="xav-dh-Wcd" secondAttribute="top" id="Ov3-Em-MSd"/>
+                    <constraint firstItem="uDf-eF-Ct2" firstAttribute="leading" secondItem="3ia-pH-18s" secondAttribute="trailing" constant="8" id="PZN-yl-WfD"/>
+                    <constraint firstItem="3ia-pH-18s" firstAttribute="leading" secondItem="xav-dh-Wcd" secondAttribute="trailing" constant="8" id="lPn-zC-8AD"/>
+                    <constraint firstAttribute="bottom" secondItem="eON-Xv-SqH" secondAttribute="bottom" id="q5w-0E-8PI"/>
+                    <constraint firstItem="uDf-eF-Ct2" firstAttribute="top" secondItem="xav-dh-Wcd" secondAttribute="top" id="rEL-ng-Wsc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseMarketingStatusView" destination="eON-Xv-SqH" id="R0k-Fd-NRi"/>
+                <outlet property="opctionalTermsTitle" destination="3ia-pH-18s" id="bj6-ed-bGg"/>
+                <outlet property="showChooseMarketingButton" destination="uDf-eF-Ct2" id="rTi-Il-i0G"/>
+            </connections>
+            <point key="canvasLocation" x="-42.748091603053432" y="-72.887323943661968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="com-unfold" width="48" height="48"/>
+        <image name="ico-24-check-off" width="48" height="48"/>
+    </resources>
+</document>

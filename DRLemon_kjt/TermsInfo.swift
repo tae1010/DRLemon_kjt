@@ -13,11 +13,14 @@ struct TermsInfo {
 }
 
 extension TermsInfo {
-    static var terms = [
+    static var requiredTerms = [
         TermsInfo(termsTitle: "[필수] 청구의신 서비스 이용 악관"),
         TermsInfo(termsTitle: "[필수] 개인(신용)정보 수집 및 이용 동의"),
         TermsInfo(termsTitle: "[필수] 민감정보 및 진료정보 처리 동의"),
-        TermsInfo(termsTitle: "[필수] 고유식별정보 처리 동의"),
-        TermsInfo(termsTitle: "asdasdadadasdasdasdadadasdafdhasdfasfdfgfgjdasfgjdsfgdfgjsjadfgs")
+        TermsInfo(termsTitle: "[필수] 고유식별정보 처리 동의")
+    ]
+    
+    static var optionalTerms = [
+        TermsInfo(termsTitle: "[선택] 마케팅 활용 동의"),
     ]
 }
